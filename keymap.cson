@@ -1,0 +1,17 @@
+# Your keymap
+#
+# Atom keymaps work similarly to stylesheets. Just as stylesheets use selectors
+# to apply styles to elements, Atom keymaps use selectors to associate
+# keystrokes with events in specific contexts.
+#
+# You can create a new keybinding in this file by typing "key" and then hitting
+# tab.
+#
+'.workspace .editor':
+  'cmd-backspace': 'unset!'
+  'cmd-delete': 'unset!'
+  'cmd-backspace': 'editor:delete-line'
+  'cmd-delete': 'editor:delete-line'
+  "cmd-'": 'auto-indent:apply'
+
+# '.platform-darwin .workspace .editor':
